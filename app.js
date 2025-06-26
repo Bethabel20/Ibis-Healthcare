@@ -23,13 +23,13 @@ midnight.setHours(24,0,0);
 
 if (currentTime >= afterNoon && currentTime <= evening) {
 //    const time = new Date().toLocaleTimeString();
-   greetingEle.innerText = "Good Afternoon Gracefamily!";
+   greetingEle.innerText = "Good Afternoon Ibis Family!";
 }
 else if (currentTime > evening && currentTime <= midnight) {
-      greetingEle.innerText = "Good Evening Gracefamily!";
+      greetingEle.innerText = "Good Evening Ibis Family!";
 }
 else {
-      greetingEle.innerText = "Good Morning Gracefamily!"
+      greetingEle.innerText = "Good Morning Ibis Family!"
 }
 
 
