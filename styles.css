@@ -1,0 +1,320 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kumbh+Sans:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+  /* overflow: hidden; */
+}
+
+
+/*Navigation bar styling*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 120px;
+    background-color: RGB(0, 176, 80);
+}
+
+img {
+    width: 200px;
+    height: 60px;
+    border: 3px solid rgba(238, 240, 235, 0.452);
+    border-radius: 5px;
+    /* padding-right: 5px; */
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}   
+
+.menu-bar ul li {
+    padding-left: 30px;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.menu-bar ul li a {
+    font-size: 1.3rem;
+    /* color: rgba(166, 255, 0, 0.842); */
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-bar ul li a:hover {
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.submenu-bar li a:hover {
+    /* background-color: rgba(3, 75, 35, 0.719); */
+    border-radius: 5px;
+    padding: 3px;
+    width: 100%;
+    translate: 0.5s;
+}
+
+.submenu-bar ul {
+    display: none;
+}
+
+.menu-bar ul li:hover .submenu-bar ul {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    list-style: none;
+    width: 300px;
+    /* background-color: rgba(8, 121, 59, 0.459); */
+    background-color: rgba(0, 165, 79, 0.925);
+    left: 5px;
+    padding-top: 20px; 
+    line-height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-bottom:10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.363);
+} 
+
+.open-close-icon ion-icon{
+    font-size: 60px;
+  }
+
+.open-close-icon  {
+    display: none;
+}
+
+
+
+/* Body Section Styling*/
+.main {
+    height: 80vh;
+    text-align: center;
+    background: url("images/sunrise.jpg") no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.main h1 {
+    padding-top: 30px;
+    color: rgba(39, 38, 37, 0.521);
+
+}
+.welcome {
+    color: rgb(204, 131, 22);
+    margin-left:50px;
+
+}
+
+.section1 {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 40px;   
+}
+
+.section1 .section1-menu li{
+    list-style: none;
+
+}
+.section1 .section1-menu li a {
+    display: grid;
+    padding: 20px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    color: rgb(29, 21, 13);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 15px;
+
+}
+
+.section1 .section1-submenu {
+        display: none;
+        position: absolute;
+}
+.section1 .section1-menu li:hover .section1-submenu {
+    display: block;
+    transform: translate(230px, -100px);
+   
+}
+
+.section1-menu a:hover {
+    cursor: pointer;
+    background-color: rgba(216, 217, 231, 0.925);
+    color:rgba(255, 255, 255, 0.555);
+}
+
+
+.section2 {
+    background-color: rgba(99, 207, 207, 0.375);
+    width: 370px;
+    height: 550px;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-top: -200px;
+    line-height: 10px;
+    text-align: center;  
+}
+.section2 h2 {
+
+    box-shadow: 0px 5px 20px rgba(53, 3, 3, 0.452);
+    border-bottom: 3px solid;
+    padding: 20px;
+    color:  rgba(100, 45, 45, 0.849);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.phone-directory li {
+    list-style: none;
+    font-size: 1.rem;
+    padding: 10px;
+    
+}
+
+.quotes p {
+    color:rgb(29, 86, 190);
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+
+
+/* Footer  Stylying*/
+footer {
+    padding-top: 30px;
+    background-color: RGBa(0, 176, 80);
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.74)
+}
+
+
+/* icons */
+ion-icon {
+    /* font-size: 20px; */  
+}
+
+.fa {
+    padding-right: 15px;
+    font-size: 1.75rem;
+}
+
+.link-icon {
+
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px
+
+}
+
+table tr td {
+    padding: 5px;
+}
+
+table tr td img {
+    height: 100px;
+    width: 130px;
+    border-radius: 10px
+}
+
+table tr td a:hover img{
+    border: 1px solid #1a1919;
+}
+
+
+/*Responsive styling  @media*/
+@media screen and (max-width: 680px) {
+
+    .open-close-icon   {
+        display: block;
+    }
+    .main {
+        height: 1170px;
+    }
+   header ul li{
+    display: none;
+    height: 300px;
+    padding-left: 150px;
+   }
+   .menu-bar ul {
+    display: block;
+   }
+   .submenu-bar ul {
+    display: none;
+    }
+
+    .menu-bar ul li {
+        padding-left: 30px;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .menu-bar ul li:hover .submenu-bar ul {
+        display: block;
+        position: absolute;
+        justify-content: center;
+        list-style: none;
+        width: 300px;
+        background-color: rgb(8, 121, 59);
+        border: 1px solid rgba(116, 6, 6, 0.199);
+        left: 150px;
+        line-height: 40px;
+        font-size: 1rem;
+        border-radius: 10px;
+        padding-bottom:10px;
+        top: 0;
+        z-index: 1;
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.747);
+    } 
+
+
+    .section2 {
+        position:absolute;
+        background-color: rgba(99, 207, 207, 0.375);
+        width: 370px;
+        height: 550px;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-top: 200px;
+        line-height: 10px;
+        text-align: center;  
+    }
+    .section2 h2 {
+
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.295);
+        border-bottom: 3px solid;
+        padding: 20px;
+        color:  rgba(59, 18, 18, 0.705);
+    }
+    .quotes p {
+       position: absolute;
+       margin-top: 770px;
+       color: #fff;
+    }
+
+
+  }
